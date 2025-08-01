@@ -9,19 +9,23 @@
   --warm-beige: #fff3e0;
   --charcoal-text: #333333;
   --alert-coral: #ff6f61;
+  /* Typography */
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Roboto", sans-serif;
 }
 
 /* Global Styles */
 
-/* wildcard */
+/* wildcard */  
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: dashed 1px red; /* For debugging, remove in production */
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-body);
   background-color: var(--soft-gray);
   color: var(--charcoal-text);
 }
@@ -29,7 +33,8 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-heading);
+  color: var(--primary-blue);
 }
 
 
