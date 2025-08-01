@@ -1,0 +1,35 @@
+/* CSS Stylesheet */
+
+/* CSS variables */
+:root {
+  /* Color Palette */
+  --primary-blue: #3c8dad;
+  --accent-green: #9ad3bc;
+  --soft-gray: #f4f4f4;
+  --warm-beige: #fff3e0;
+  --charcoal-text: #333333;
+  --alert-coral: #ff6f61;
+}
+
+/* Global Styles */
+
+/* wildcard */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--soft-gray);
+  color: var(--charcoal-text);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+
