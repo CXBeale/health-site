@@ -84,4 +84,66 @@ h3 {
   color: var(--primary-blue);
 }
 
+/* Hamburger Menu Button (hidden by default) */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+
+/* Font Awesome hamburger icon styling */
+.nav-toggle .fa-bars {
+  font-size: 2rem;
+  color: var(--charcoal-text);
+  transition: color 0.3s;
+}
+.nav-toggle:focus .fa-bars,
+.nav-toggle:hover .fa-bars {
+  color: var(--primary-blue);
+}
+
+/* Tablet and Mobile Styles */
+@media screen and (max-width: 768px) {
+  /* Show hamburger button on small screens */
+  .nav-toggle {
+    display: flex;
+  }
+
+  /* Hide menu by default on small screens */
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: var(--soft-gray);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+  }
+
+  /* Show menu when active */
+  .nav-menu.active {
+    left: 0;
+  }
+
+  /* Stack menu items vertically */
+  .nav-item {
+    margin: 1rem 0;
+    margin-left: 0;
+  }
+
+  /* Make nav links bigger for touch */
+  .nav-link {
+    font-size: 1.1rem;
+    padding: 1rem;
+    display: block;
+  }
+}
+
 
