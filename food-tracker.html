@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Tracker | HealthSite</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f5072bfa60.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f5072bfa60.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="index.html" class="nav-brand">HealthSite</a>
-                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="nav-menu" id="nav-menu">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="food-tracker.html" class="nav-link active">Food Tracker</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Exercise</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Wellness</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="nav-container">
+          <a href="index.html" class="nav-brand">HealthSite</a>
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="food-tracker.html" class="nav-link active"
+                >Food Tracker</a
+              >
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Exercise</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Wellness</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-        <h1>Food Intake Tracker</h1>
-        <section id="food-tracker">
-            <div class="food-tracker-form">
-                <input type="text" id="food-input" placeholder="Enter food..." />
-                <button id="add-food-btn">Add Food</button>
-            </div>
-            <ul id="food-list"></ul>
-        </section>
+      <h1>Food Intake Tracker</h1>
+      <section id="food-tracker">
+        <div class="food-tracker-form">
+          <input type="text" id="food-input" placeholder="Enter food..." />
+          <button id="add-food-btn">Add Food</button>
+        </div>
+        <ul id="food-list"></ul>
+      </section>
     </main>
     <footer>
-        <p>&copy; 2023 HealthSite. All rights reserved.</p>
+      <p>&copy; 2023 HealthSite. All rights reserved.</p>
     </footer>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
