@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}Dashboard | Health Site{% endblock %}
+{% block content %}
+  <h2>Dashboard (starter)</h2>
+  <p>Welcome{% if request.user.is_authenticated %}, {{ request.user.username }}{% endif %}.</p>
+{% endblock %}
