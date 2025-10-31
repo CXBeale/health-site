@@ -128,3 +128,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_URL = '/admin/login/'       # where unauthenticated users are sent
+LOGIN_REDIRECT_URL = '/'          # where to go after successful login
+LOGOUT_REDIRECT_URL = '/'         # where to go after logout
