@@ -9,7 +9,11 @@
   <body>
     <header>
       <h1>Health Site</h1>
-      <nav><a href="/">Home</a> | <a href="/admin/">Admin</a></nav>
+      <nav>
+        <a href="/">Home</a> |
+        <a href="/admin/">Admin</a> |
+        <a href="{% url 'food_list' %}">Food Diary</a>
+      </nav>
     </header>
     <main>
       {% block content %}{% endblock %}

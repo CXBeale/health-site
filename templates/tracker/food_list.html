@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Food Diary{% endblock %}
+{% block content %}
+  <h2>Food Diary</h2>
+  <p><a href="{% url 'food_add' %}">Add entry</a></p>
+  {% if entries %}
+    <table>
+      <thead>
+        <tr>
+          <th>When</th><th>Name</th><th>Calories</th><th>P</th><th>C</th><th>F</th><th>Serving</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for e in entries %}
+          <tr>
+            <td>{{ e.eaten_at|date:"Y-m-d H:i" }}</td>
+            <td>{{ e.name }}</td>
+            <td>{{ e.calories }}</td>
+            <td>{{ e.protein_g }}</td>
+            <td>{{ e.carbs_g }}</td>
+            <td>{{ e.fat_g }}</td>
+            <td>{{ e.serving_size }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No entries yet.</p>
+  {% endif %}
+{% endblock %}
